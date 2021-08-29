@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f7d7c8;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+
+.burger{
+    width: 30px;
+    height: 28px;
+    margin: 8rem auto 3rem;
+}
+
+.burger div{
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    margin: .5rem 0;
+}
+
+.intro h1{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Merriweather";
+    color: #f7d7c8;
+}
+
+.image{
+    background: url("../images/photo-1548207775-a7676e36f20a.jpeg");
+    background-size: 570px;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: circle();
+    width: 570px;
+    height: 570px;
+    backface-visibility: hidden;
+    margin: 0 auto;
+    transition: all .4s ease-in-out;
+}
+
+.image:hover{
+    background-size: 600px;
+    opacity: .8;
+} 
+
+.intro h2{
+    color:#f7d7c8;
+}
+
+.intro p{
+    width: 50%;
+    line-height: 1.8;
+    margin: 1rem auto 1.5rem;
+    text-align: left;
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+    color:#999999;
+}
+
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    margin: 1rem auto 10rem;
+    text-align: left;
+    grid-column-gap: 5rem;
+}
+
+.left-section{
+    display: grid;
+    grid-template-rows: 230px auto;
+}
+
+.right-section{
+    display: grid;
+    grid-template-rows: 100px 200px auto;
+}
+
+.left-section h1{
+    font-size: 2.9rem;
+    line-height: 1;
+    width: 90%;
+    color:#f7d7c8;
+}
+
+.left-section h4{
+    width: 30%;
+    letter-spacing: 4px;
+}
+
+.right-section h4{
+    font-size: 1.8rem;
+    color:#f7d7c8;
+}
+
+.top h1{
+    font-size: 5rem;
+    margin: 2rem auto;
+    font-family: 'Playfair Display', serif;
+}
+
+.top hr{
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.top h2{
+    font-size: 3rem;
+    width: 50%;
+    margin: 1rem auto;
+    color:#f7d7c8;
+    font-family: "Merriweather", serif 
+}
+
+
+.top h3{
+    color:#f7d7c8;
+    letter-spacing: 2px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.photogrid{
+    display: grid;
+    margin-top: 7rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+    padding: 0 7rem;
+    justify-items: center;
+}
+
+.first-img{
+    border-radius: 1.7rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 350px;
+    background-size: 330px;
+    background-image: url("../images/pexels-photo-4107897.jpeg");
+    transition: all .4s ease-in-out;
+}
+
+.first-img:hover, .second-img:hover, .third-img:hover, .fourth-img:hover, .fifth-img:hover, .sixth-img:hover{
+    background-size: 350px;
+    opacity: .8;
+}
+
+.second-img{
+    border-radius: 1.7rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 350px;
+    background-size: 330px;
+    transition: all ease-in .7s;
+    background-image: url("../images/pexels-photo-7766563.jpeg");
+}
+
+.third-img{
+    border-radius: 1.7rem;
+    transition: all ease-in .7s;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 350px;
+    background-size: 330px;
+    background-image: url("../images/pexels-photo-3802239.jpeg");
+}
+
+.fourth-img{
+    border-radius: 1.7rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 350px;
+    transition: all ease-in .7s;
+    background-size: 330px;
+    background-image: url("../images/pexels-photo-3261141.jpeg");
+}
+
+.fifth-img{
+    border-radius: 1.7rem;
+    background-position: center;
+    transition: all ease-in .7s;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 350px;
+    background-size: 330px;
+    background-image: url("../images/pexels-photo-3137073.jpeg");
+}
+
+.sixth-img{
+    border-radius: 1.7rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 330px;
+    transition: all ease-in .7s;
+    height: 350px;
+    background-size: 330px;
+    background-image: url("../images/pexels-photo-2438212.jpeg");
+}
+
+.btn{
+    width:250px;
+    height: 50px;
+    margin: 4rem auto 10rem;
+    min-width: 200px;
+    padding: 12px 20px;
+    border: 4px solid #fefbf9;
+    background: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: White;
+}
+
+.btn:hover{
+    color: #000;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #fff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+
+.btn:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+.last-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    margin: 1rem auto;
+    text-align: left;
+    grid-column-gap: 3rem;
+}
+
+.left-LS{
+    display: grid;
+    grid-template-rows: 200px 300px;
+}
+
+.right-LS{
+    display: grid;
+    grid-template-rows: 270px auto;
+}
+
+.left-LS h5{
+    font-size: 1.3rem;
+    color:#f7d7c8;
+}
+
+.left-LS p, .right-LS p{
+    font-size: 1.1rem;
+}
+
+.right-LS img{
+    width: 35%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box h6{
+    margin-left: 1rem;
+    font-size: 1.7rem;
+}
+
+.about-us h1{
+    font-size: 3.8rem;
+    color: #f7d7c8;
+}
+
+.tel{
+    font-size: 2rem;
+    display: inline;
+}
+
+.location{
+    font-size: 1.3rem;
+    color: #f7d7c8;
+    
+}
+
+.links i{
+    margin: 2rem 2rem  7rem;
+}
+
+.last-img{
+    background-image: url("../images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg");
+    clip-path: circle();
+    background-position: center;
+    background-size: 290px;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 300px;
+    display: block;
+    margin: 1rem auto;
+    transition: all .2s ease-in-out;
+}
+
+.last-img:hover{
+    background-size: 300px;
+}
+
+.top i{
+    margin: 3rem auto;
+}
+
+
+.about-us i{
+    display: inline;
+    margin-right: 1rem;
+}
+
+.address{
+    width: 30%;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+}
+
+
